@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="styles/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <title>Passenger Counter</title>
+
+    <style>
+         .text{
+              font-size: 150px;
+         }
+
+         .imgbg{
+              background-color: rgb(107, 199, 145);
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+         }
+
+         .mes{
+              font-weight: 500;
+              font-size: 30px;
+         }
+
+         button:focus{
+              transform:scale(1) ;
+         }
+    </style>
+  </head>
+  <body>
+     <div class="row mt-5"></div>
+     <div class="container">
+          <div class="row justify-content-center mt-5">
+               <div class="col-md-5 text-center">
+                    <div class="card">
+                         <div class="card-header bg-success text-white">
+                              <h3 class="p-3">Mabawaba App</h3>
+                         </div>
+                         <div class="card-body imgbg">
+                              
+                              <div class="row">
+                                   <div class="col-md-12">
+                                        <h2 class="pt-5 mes">Idadi ya Waumini</h2>
+                                        <h1 class="text" id="pass_num">0</h1>
+                                   </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                   <div class="col-md-10">
+                                        <button style="width: 100%;" class="btn btn-lg btn-primary" onclick="increment()">Bonyeza Kuongeza</button>
+                                   </div>
+                              </div>
+                              <div class="row justify-content-center mt-3">
+                                   <div class="col-md-10">
+                                        <button style="width: 100%; background-color: rgb(255, 118, 5);" class="btn btn-lg btn-danger text-white bbt" onclick="save()">Hifadhi Idadi</button>
+                                   </div>
+                              </div>
+                              <div class="row justify-content-center mt-3">
+                                   <div class="col-md-10">
+                                        <button type="submit" style="width: 100%; background-color: darkred;" class="btn btn-lg text-white bbt" onclick="refresh()">Futa</button>
+                                   </div>
+                              </div>
+                              <div class="container">
+                                   <div class="row">
+                                        <div class="col-md-12 text-start py-5">
+                                             <h4 class="px-3`" id="countEl">Idadi ya Waumini: </h4>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+    <script src="styles/js/script.js" ></script>
+    <!-- <script src="styles/js/bootstrap.bundle.min.js" ></script>
+    <script src="styles/js/jquery-3.6.0.min.js" ></script> --> 
+  </body>
+</html>
